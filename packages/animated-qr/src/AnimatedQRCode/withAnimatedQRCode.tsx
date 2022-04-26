@@ -2,7 +2,7 @@ import React, { ReactElement, useMemo } from "react";
 import { useAnimatedQRCode } from "./useAnimatedQRCode";
 
 interface HOCProps {
-  WrappedComponent: (props: any) => ReactElement
+  WrappedComponent: React.ComponentType
   valueFieldName?: string,
   additionalProps?: {
     [props: string]: any
